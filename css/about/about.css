@@ -1,0 +1,61 @@
+.about{
+    padding: 100px 0px;
+}
+.about h2{
+    font-size: 2.45rem;
+    margin-left: 2rem;
+}
+.about p{
+    font-size: .90rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.gruop-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 2rem;
+    gap: 40px;
+}
+
+.card{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    
+}
+.card img{
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition-duration: .4s;
+    
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
+}
+.card .footer:hover{
+    transition-duration: .4s;
+    color: var(--color-secundary);
+    background-color: var(--color-primary);
+}
+
+@media (min-width: 920px){
+    .gruop-card {
+         grid-template-columns: repeat(3,1fr);
+         gap: 40px;
+    }
+}

@@ -1,0 +1,43 @@
+.welcome{
+    padding: 100px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+
+.welcome .welcome-image{
+    width: 100%;
+}
+
+.welcome .welcome-image img{
+    width: 100%;
+}
+
+.welcome .welcome-text{
+    padding: 2rem;
+}
+
+.welcome .welcome-text h2{
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+
+.welcome .welcome-text p{
+    font-size: .90rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+
+@media (min-width:920px){
+    .welcome{
+        grid-template-columns: 1fr 1fr;
+    }
+
+        .welcome .welcome-image img {
+            width: 90%;
+        }
+}
